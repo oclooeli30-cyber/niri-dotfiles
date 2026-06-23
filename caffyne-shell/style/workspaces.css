@@ -1,0 +1,71 @@
+.workspace {
+    background-color: var(--surface_container);
+    border-radius: apply(radius-m);
+    /* margin: 0px 2px; */
+    padding: 7px 7px;
+    border: 1px solid;
+    border-color: var(--surface_container_highest);
+    transition: all 0.3s ease;
+}
+
+.workspace.variant-icons {
+    padding: 8px 9px;
+}
+
+.workspace.active {
+    border-color: var(--primary);
+}
+
+.workspace-dots-container {
+    padding: 15px 13px;
+    background-color: var(--surface_container);
+    border-radius: apply(radius-m);
+}
+
+.workspace-dot {
+    min-width: 6px;
+    min-height: 6px;
+    border-radius: apply(radius-s);
+    background-color: var(--outline);
+    transition: all 0.3s ease;
+}
+
+.workspace-dot.active {
+    min-width: 18px;
+    background-color: var(--primary);
+}
+
+.workspace-pill {
+    color: var(--primary);
+}
+
+.workspace-numbers-container {
+    border-radius: apply(radius-m);
+}
+
+.workspace-numbers-container .workspace {
+    padding: 0px 10px;
+    min-height: 36px;
+    border-radius: 0px;
+    border: unset;
+    min-width: 10px;
+    transition:
+        background-color 300ms ease,
+        color 300ms ease;
+}
+
+.workspace-numbers-container .workspace.active {
+    background-color: var(--primary);
+}
+
+.workspace-numbers-container .workspace label {
+    font-size: 14px;
+    color: var(--on_surface_variant);
+    opacity: 0.6;
+    transition: color 300ms ease;
+}
+
+.workspace-numbers-container .workspace.active label {
+    color: var(--on_primary);
+    opacity: 1;
+}

@@ -1,0 +1,16 @@
+CC      := gcc
+CFLAGS  := -fPIC -Wall -Wextra -O2
+LIBS    := $(shell pkg-config --cflags --libs gtk+-3.0) -lm
+
+TARGET  := libhacktk.so
+SRC     := hacktk.c
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) -shared -o $@ $< $(LIBS)
+
+clean:
+	rm -f $(TARGET)
+
+.PHONY: all clean

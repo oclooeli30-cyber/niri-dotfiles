@@ -1,0 +1,209 @@
+.dash {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dash-grid {
+    min-width: 1104px;
+    min-height: 630px;
+    border-radius: apply(radius-xl);
+}
+
+.dash-launcher-app {
+    background-color: var(--background);
+    padding: 18px;
+    border-radius: apply(radius-xl);
+    box-shadow: inset 0 0 0 1px var(--outline_variant);
+    min-width: 138px;
+    min-height: 138px;
+    transition: 0.3s ease;
+}
+
+.dash-launcher-app.hover {
+    background-color: var(--surface_container_high);
+    transition: 0.3s ease;
+}
+
+.dash-launcher-app.active {
+    background-color: var(--surface_container);
+    transition: 0.3s ease;
+}
+
+.dash-launcher-app.focus {
+    box-shadow: inset 0 0 0 1px var(--outline);
+    transition: 0.3s ease;
+}
+
+.dash-applet-item {
+    background-color: var(--background);
+    padding: 18px;
+    border-radius: apply(radius-xl);
+    box-shadow: inset 0 0 0 1px var(--outline_variant);
+    min-width: 138px;
+    min-height: 138px;
+    transition: 0.3s ease;
+}
+
+.dash-applet-item.hover {
+    background-color: var(--surface_container_high);
+    transition: 0.3s ease;
+}
+
+.dash-applet-item.active {
+    background-color: var(--background);
+    transition: 0.3s ease;
+}
+
+.dash-applet-item.focus {
+    box-shadow: inset 0 0 0 1px var(--outline);
+    transition: 0.3s ease;
+}
+
+.in-bar * {
+    opacity: 0.4;
+    /* optional: show it's "taken" */
+}
+
+.dash-grid-selector-scroll {
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: apply(radius-l);
+}
+
+.dash-grid-selector-preview {
+    border-radius: apply(radius-l);
+}
+
+.dash-grid-selector-preview.active {
+    box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.wallpaper-thumb-image {
+    border-radius: apply(radius-l);
+    /* margin: 1px; */
+    /* padding: 1px; */
+}
+
+.wallpaper-thumb-image.active {
+    box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.grid-selector-thumb-scroll {
+    border-radius: apply(radius-l);
+}
+
+.theme-preview-box {
+    min-width: 918px;
+    min-height: 546px;
+    background-color: var(--surface_container_lowest);
+    box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.section-root {
+    min-width: 784px;
+}
+
+.section-body {
+    border-radius: apply(radius-l);
+}
+
+.section-child {
+    background-color: var(--surface_container);
+    padding: 6px 24px;
+    min-height: 36px;
+}
+
+.section-header {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: apply(mixed-mono);
+}
+
+.dash-switch {
+    color: var(--on_surface);
+    background-color: var(--surface_container_high);
+    transition: 0.3s ease;
+}
+
+.dash-switch.checked {
+    color: var(--surface_container_high);
+    background-color: var(--primary);
+}
+
+.option-selection-container {
+    background-color: var(--surface);
+    padding: 6px 6px;
+    min-height: 24px;
+    border-radius: apply(radius-m);
+}
+
+.option-selection-button {
+    border-radius: apply(radius-s);
+    padding: 4px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.option-selection-button:hover {
+    background-color: var(--surface_container);
+}
+
+.option-selection-button.active {
+    background-color: var(--primary);
+}
+
+.option-selection-button.active * {
+    color: var(--on_primary);
+}
+
+.matugen-thumb {
+    min-width: 174px;
+    min-height: 174px;
+    /* padding: 51px; */
+    background-color: var(--surface);
+    border-radius: apply(radius-l);
+}
+
+.theme-preview-color-container {
+    padding: 10px;
+    border-radius: apply(radius-m);
+}
+
+.dash-header-button-container {
+    border-radius: apply(radius-m);
+    background-color: var(--surface_container);
+}
+
+.dash-header-button {
+    padding: 9px 10px;
+    border-radius: apply(radius-m);
+    background-color: var(--surface_container);
+    transition: background-color 0.3s ease;
+}
+
+.dash-header-button:hover {
+    background-color: var(--surface_container_high);
+    transition: background-color 0.3s ease;
+}
+
+.dash-header-button:active {
+    background-color: var(--surface_container);
+    transition: background-color 0.3s ease;
+}
+
+
+.dash-header-button.active {
+    background-color: var(--surface_container_high);
+    transition: background-color 0.3s ease;
+}
+
+.dash-stack {
+    border-radius: apply(radius-l);
+}
+
+
+.dash-theme-preview-title {
+    margin-top: 32px;
+    margin-left: 64px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: apply(mixed-mono);
+}

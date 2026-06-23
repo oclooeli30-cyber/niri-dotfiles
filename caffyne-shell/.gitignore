@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+# Virtual environments
+venv/
+.env/
+.venv/
+
+plugins/*
+
+styles/colors.css
+styles/borders.css
+styles/fonts.css
+
+# Logs / misc
+*.log
+*.so
+config/*.json

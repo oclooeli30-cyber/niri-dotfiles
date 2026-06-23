@@ -1,0 +1,5 @@
+caffyne-shell/venv/
+caffyne-shell/**/__pycache__/
+caffyne-shell/**/*.pyc
+caffyne-shell/**/*.so
+caffyne-shell/wallpapers/

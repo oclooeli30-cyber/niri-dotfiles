@@ -1,0 +1,64 @@
+spawn-at-startup "~/.config/caffyne-shell/start.sh"
+
+layout {
+    background-color "transparent"
+}
+
+layer-rule {
+    match namespace="^awww-daemon$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^caffyne-shell-applet$"
+    background-effect {
+        xray false
+        saturation 1.0
+      	noise 0
+    }
+}
+
+layer-rule {
+    match namespace="^caffyne-shell-notifications$"
+    background-effect {
+        xray false
+        saturation 1.0
+      	noise 0
+    }
+}
+
+layer-rule {
+    match namespace="^caffyne-shell-bar$"
+    background-effect {
+        xray false
+        saturation 1.0
+      	noise 0
+    }
+}
+
+layer-rule {
+    match namespace="^caffyne-shell-osd$"
+    background-effect {
+        xray false
+        saturation 1.0
+      	noise 0
+    }
+}
+
+layer-rule {
+    match namespace="^caffyne-shell-dash$"
+    background-effect {
+        saturation 1.0
+      	noise 0
+    }
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+binds {
+    Mod+Space { spawn "fabric-cli" "exec" "caffyne-shell" "bar_manager.toggle('Dash')"; }
+}
