@@ -21,3 +21,6 @@ Dependencies:
 * vicinae
 * caffyne-shell
 * matugen
+
+
+Looks best with JetBrains Mono Font
