@@ -1,4 +1,4 @@
-#Niri Dotfiles
+# Niri Dotfiles
 
 These are the dots for my niri setup made with caffyne-shell and matugen
 
