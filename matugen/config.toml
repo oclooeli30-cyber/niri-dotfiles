@@ -1,0 +1,63 @@
+[config.wallpaper]
+command = "awww img {{ image }} --transition-type simple"
+set = false
+
+[templates.caffyne]
+input_path = '~/.config/caffyne-shell/matugen/caffyne-shell-colors.css'
+output_path = '~/.config/caffyne-shell/style/colors.css'
+
+[templates.ignis]
+input_path = './templates/colors.scss'
+output_path = '~/.config/ignis/colors.scss'
+
+[templates.zed]
+input_path = '~/.config/matugen/templates/zed-colors.json'
+output_path = '~/.config/zed/themes/matugen.json'
+
+[templates.opencode]
+input_path = '~/.config/matugen/templates/opencode.json'
+output_path = '~/.config/opencode/themes/matugen.json'
+
+[templates.hyprlock]
+input_path = './templates/hyprlock.conf'
+output_path = '~/.config/hypr/hyprlock.conf'
+
+[templates.ghostty]
+input_path = './templates/ghostty.conf'
+output_path = '~/.config/ghostty/config'
+
+[templates.vicinae]
+input_path = './templates/vicinae.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
+
+[templates.kitty]
+input_path = './templates/kitty.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/material-gnome-gtk3-colors.css'
+output_path = '~/.themes/material-gnome-theme/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme "" && gsettings set org.gnome.desktop.interface gtk-theme material-gnome-theme'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.qt5ct]
+input_path = './templates/qt-colors.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = './templates/qt-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.vscode] # hyprluna
+input_path = "~/.config/matugen/templates/hyprlunavsc.json"
+output_path = "~/.vscode/extensions/hyprluna.hyprluna-theme-1.0.2/themes/hyprluna.json"
+
+[templates.qt-color-scheme]
+input_path = '~/.config/matugen/templates/Matugen.colors'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
